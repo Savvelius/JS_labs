@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Список объявлений</title>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1>Список объявлений</h1>
+    <ol id="adList">
+    </ol>
+
+    <h2>Добавление объявления</h2>
+    <form id="addForm">
+        <label for="addName">Введите название</label>
+        <input id="addName" type="text">
+        <br>
+        <label for="addDesc">Введите описание</label>
+        <input id="addDesc" type="text">
+        <br>
+        <label for="addPrice">Введите цену</label>
+        <input id="addPrice" type="number">
+        <br>
+        <label for="addImg">Прикрепите изображение</label>
+        <input id="addImg" type="image">
+        <button type="submit">Добавить</button>
+    </form>
+    <p id="addOutput"></p>
+
+    <h2>Изменение объявления</h2>
+    <form id="editForm">
+        <label for="editInputId">Введите номер объявления</label>
+        <input id="editInputId" type="number">
+        <br>
+        <label for="editInputText">Введите новый текст</label>
+        <input id="editInputText" type="text">
+        <button type="submit">Заменить</button>
+    </form>
+    <p id="editOutputText"></p>
+    <p id="editOutputId" style="color: red;"></p>
+
+    <h2>Удаление объявления</h2>
+    <form id="deleteForm">
+        <label for="deleteInput">Введите номер объявления</label>
+        <input id="deleteInput" type="number">
+        <button type="submit">Удалить</button>
+    </form>
+    <p id="deleteOutput"></p>
+</body>
+</html>
